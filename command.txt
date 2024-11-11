@@ -1,0 +1,2 @@
+python evaluate-v2.0.py ./data/dev-v1.1.json ./result/one_shot/phi-3.5-mini-instruct-one-shot-processed.json
+python evaluate-v2.0.py ./data/dev-v1.1.json ./result/finetune_explanation/phi-3.5-mini-instruct-base.json
