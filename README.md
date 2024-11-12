@@ -122,12 +122,12 @@ We have already provided all our experimental results under `./result` directory
 
 ## Data Augmentation
 
-In our project, we design a explanation-augmented fine-tuning strategy, where we ultilize GPT-4o-mini (theoretically,
-any model can be used) to automaticall synthesizing the required explanation data for finetuning. Specifically, we use the API model to provide explanations for
+In our project, we design a explanation-augmented fine-tuning strategy, where we ultilize an off-the-shelf LLM (theoretically,
+any model can be used, and we use GPT-4o-mini in our implementation) to automaticall synthesizing the required explanation data that serves as additional label for model finetuning. Specifically, we use the API model to provide explanations for
 data items in the SQuAD dataset based on their context, questions, and answers. The script used for generating augmented
 data is located in the augmentation directory. To begin, export your OPENAI_API_KEY as an environment variable. Then,
 run the script from the root directory of the project to generate the augmented data.
 
 ## Acknowledgement
 
-Our code is inspired by [LLaMA](https://github.com/meta-llama/llama3), [Phi](https://github.com/microsoft/Phi-3CookBook), [Qwen](https://github.com/QwenLM/Qwen2.5).
+Part of our implementation is inspired by [LLaMA](https://github.com/meta-llama/llama3), [Phi](https://github.com/microsoft/Phi-3CookBook), [Qwen](https://github.com/QwenLM/Qwen2.5).
