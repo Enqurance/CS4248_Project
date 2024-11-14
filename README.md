@@ -97,6 +97,8 @@ You may need some postprocessing after getting the result file. For example, ext
 next section will introduce how to evaluate using the experimental results we provided and they are already well
 processed.
 
+For `qwen-zero-shot.ipynb` and `qwen_essemble.ipynb`, just remove the proxy and run the cells directly to inference the model and get prediction files.
+
 ## Evaluation
 
 You may need to first process results after inferencing. For zero-shot and finetune withour explanation, you do not need
