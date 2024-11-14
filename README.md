@@ -134,7 +134,7 @@ run the script from the root directory of the project to generate the augmented 
 
 We use two ensemble methods:
 
-- LLM-based ensemble: we use another LLM(Qwen-2.5) acts as a judge to evaluate answers from LLaMA and Phi.
+- LLM-based ensemble: we use another LLM(Qwen-2.5) acts as a judge to evaluate answers from LLaMA and Phi. You can find the code in `qwen_essemble.ipynb`, and simply run all the cells will output the prediction output of the LLM-ensemble prediction results using Qwen-2.5.
 - Probability-based ensemble: we select the final answer by calculating confidence scores based on token probabilities
   from each model's softmax layer. The confidence score of answer is the product of probabilities for tokens than
   construct the answer. Related code can be found in function `generate_answer_finetune_explanation()`
