@@ -1,7 +1,9 @@
-# This is the final project for CS4248, group 15
+# Improving Extractive Question Answering Performance of Small Large Language Models
 
 Group Members:
 Huang Zhiwen, Lin Zijie(A0296989R), Lin, Zijie(A0307218J), Zeng Wenzheng, Zhang Tianhan
+
+This is the official implementation of our group project (Group-15).
 
 ## Quick Start
 
