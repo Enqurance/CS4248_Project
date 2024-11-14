@@ -130,6 +130,17 @@ data items in the SQuAD dataset based on their context, questions, and answers. 
 data is located in the augmentation directory. To begin, export your OPENAI_API_KEY as an environment variable. Then,
 run the script from the root directory of the project to generate the augmented data.
 
+## Model Ensemble
+
+We use two ensemble methods:
+
+- LLM-based ensemble: we use another LLM(Qwen-2.5) acts as a judge to evaluate answers from LLaMA and Phi.
+- Probability-based ensemble: we select the final answer by calculating confidence scores based on token probabilities
+  from each model's softmax layer. The confidence score of answer is the product of probabilities for tokens than
+  construct the answer. Related code can be found in function `generate_answer_finetune_explanation()`
+  of `llama_inference.py` and `phi_inference.py`
+
 ## Acknowledgement
 
 Part of our implementation is inspired by [LLaMA](https://github.com/meta-llama/llama3), [Phi](https://github.com/microsoft/Phi-3CookBook), [Qwen](https://github.com/QwenLM/Qwen2.5).
+
